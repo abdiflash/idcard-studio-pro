@@ -1,0 +1,50 @@
+:root {
+  --bg-main: #060a17;
+  --card-bg: #0d1527;
+  --card-border: #1e293d;
+  --accent-blue: #2563eb;
+  --accent-cyan: #00d8f6;
+  --text-main: #f8fafc;
+  --text-muted: #64748b;
+}
+
+body {
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  overflow: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-main);
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 4px;
+}
+
+.card {
+  background-color: var(--card-bg) !important;
+  border-color: var(--card-border) !important;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+}
+
+.list-group-item {
+  cursor: pointer;
+  transition: background-color 0.15s ease-in-out;
+}
+
+.list-group-item.active {
+  background: linear-gradient(90deg, #1d3557, #1e293b) !important;
+  border-left: 4px solid var(--accent-cyan) !important;
+  border-color: var(--card-border) !important;
+}
+
+#cardCanvas {
+  border: 1px solid var(--card-border);
+  aspect-ratio: 673 / 1063;
+}
