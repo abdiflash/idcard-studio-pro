@@ -1,0 +1,20 @@
+{
+  "name": "idcard-studio-pro",
+  "version": "1.0.0",
+  "description": "Aplikasi Desktop Standalone ID Card Generator & Masking Control",
+  "main": "src/main/main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --win"
+  },
+  "keywords": ["idcard", "digicamcontrol", "electron", "canvas", "batch-print"],
+  "author": "ID Card Studio Team",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^28.2.0",
+    "electron-builder": "^24.9.0"
+  },
+  "dependencies": {
+    "axios": "^1.6.5"
+  }
+}
